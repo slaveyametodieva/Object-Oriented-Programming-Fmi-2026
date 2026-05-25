@@ -12,3 +12,8 @@ std::optional<std::string> minCreditsRequirement::check(const Student& s) const
 	}
 	return std::nullopt;
 }
+
+std::unique_ptr<Requirement> minCreditsRequirement::clone() const
+{
+	return std::make_unique<minCreditsRequirement>(*this);
+}

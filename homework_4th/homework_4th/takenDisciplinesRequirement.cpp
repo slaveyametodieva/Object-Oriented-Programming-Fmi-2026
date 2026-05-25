@@ -28,3 +28,8 @@ std::optional<std::string> takenDisciplinesRequirement::check(const Student& s) 
 	}
 	return std::nullopt;
 }
+
+std::unique_ptr<Requirement> takenDisciplinesRequirement::clone() const
+{
+	return std::make_unique<takenDisciplinesRequirement>(*this);
+}

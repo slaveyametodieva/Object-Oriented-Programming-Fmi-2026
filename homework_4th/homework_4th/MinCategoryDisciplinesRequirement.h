@@ -10,5 +10,6 @@ class MinCategoryDisciplinesRequirement : public Requirement
 	public:
 		MinCategoryDisciplinesRequirement(Category cat, unsigned int count);
 		std::optional<std::string> check(const Student& s) const override;
+		std::unique_ptr<Requirement> clone() const override;
 };
 

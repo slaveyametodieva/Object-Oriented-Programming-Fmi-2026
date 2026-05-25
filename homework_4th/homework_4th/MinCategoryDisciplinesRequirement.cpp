@@ -23,3 +23,9 @@ std::optional<std::string> MinCategoryDisciplinesRequirement::check(const Studen
 
     return std::nullopt;
 }
+
+std::unique_ptr<Requirement> MinCategoryDisciplinesRequirement::clone() const
+{
+    return std::make_unique<MinCategoryDisciplinesRequirement>(*this);
+}
+

@@ -12,5 +12,6 @@ class minGradeRequirement : public Requirement
 		minGradeRequirement(double inpMinAvgGrade);
 
 		std::optional<std::string> check(const Student& s) const override;
+		std::unique_ptr<Requirement> clone() const override;
 };
 
