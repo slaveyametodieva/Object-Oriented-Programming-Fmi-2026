@@ -21,6 +21,7 @@ class Student
 		double getAverageGrade() const;
 		const std::vector<Discipline>& getTakenDisciplines() const;
 		unsigned int getChoosenDiscCredits() const;
+		const std::string& getFacNum() const;
 		
 
 };
