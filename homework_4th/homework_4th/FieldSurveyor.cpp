@@ -9,7 +9,7 @@ FieldSurveyor::FieldSurveyor(const std::string& inpName, unsigned int inpYExp,
 void FieldSurveyor::printInfo() const
 {
 	Cartographer::printInfo();
-	std::print(""Name: {}, yearsOfExperience : {} region: {}", region);
+	std::print(" region: {} ",region);
 }
 
  std::string FieldSurveyor::getRole() const

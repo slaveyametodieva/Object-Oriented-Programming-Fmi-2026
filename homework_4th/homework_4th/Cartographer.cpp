@@ -4,12 +4,8 @@ Cartographer::Cartographer(const std::string& inpName, unsigned int inpYearsExp)
 	name(inpName), yearsOfExperience(inpYearsExp)
 {
 }
-unsigned int Cartographer::getYearsOfExp() const
-{
-	return yearsOfExperience;
-}
 
-const std::string& Cartographer::getName() const
+void Cartographer::printInfo() const
 {
-	return name;
+	std::print("Name: {}, yearsOfexperience: {}", name, yearsOfExperience);
 }

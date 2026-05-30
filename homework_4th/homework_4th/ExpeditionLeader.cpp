@@ -7,8 +7,8 @@
 
 	void ExpeditionLeader::printInfo() const
 	{
-		std::print("Name: {}, yearsOfExperience: {} expeditions led: {}", expeditionsLed,
-			Cartographer::getName(), Cartographer::getYearsOfExp());
+		Cartographer::printInfo();
+		std::print(" expeditions led : {}", expeditionsLed);
 	}
 
 	 std::string ExpeditionLeader::getRole() const

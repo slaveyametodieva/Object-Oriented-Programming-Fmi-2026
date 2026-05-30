@@ -12,8 +12,7 @@ class Cartographer
 		virtual  std::string getRole() const = 0;
 		virtual void printInfo() const = 0;
 		virtual ~Cartographer() = default;
-		const std::string& getName() const;
-		unsigned int getYearsOfExp() const;
+
 
 
 };

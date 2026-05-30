@@ -7,8 +7,8 @@ Archivist::Archivist(const std::string& inpName, unsigned int inpYearsExp,
 
 void Archivist::printInfo() const
 {
-	std::println("Name: {}, yearsOfExperience : {} institution: {}", institution,
-		Cartographer::getName(), Cartographer::getYearsOfExp());
+	Cartographer::printInfo();
+	std::print(" institution: {}", institution);
 }
 
  std::string Archivist::getRole() const

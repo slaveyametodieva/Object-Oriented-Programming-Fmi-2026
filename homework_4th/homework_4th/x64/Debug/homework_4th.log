@@ -3,32 +3,81 @@
   Archivist.cpp
   Cartographer.cpp
   Discipline.cpp
+  Dungeon.cpp
   ExpeditionLeader.cpp
   FieldSurveyor.cpp
+  Landmark.cpp
   MinCategoryDisciplinesRequirement.cpp
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,13): error C3688: invalid literal suffix 'Name'; literal operator or literal operator template 'operator ""Name' not found
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,19): error C2143: syntax error: missing ')' before ':'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,7): error C2672: 'std::print': no matching overloaded function found
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\print(289,6):
-      could be 'void std::print(const std::basic_format_string<char,type_identity<_Args>::type...>,_Types ...)'
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\print(284,6):
-      or       'void std::print(FILE *const ,const std::basic_format_string<char,type_identity<_Args>::type...>,_Types ...)'
-          D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,7):
-          'void std::print(FILE *const ,const std::basic_format_string<char,type_identity<_Args>::type...>,_Types ...)': expects 3 arguments - 1 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2732,23): error C2039: 'parse': is not a member of 'std::formatter<std::__p2286::_Compile_time_parse_format_specs::_FormattedType,std::__p2286::_Compile_time_parse_format_specs::_CharT>'
+  (compiling source file 'Landmark.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_formatter.hpp(135,8):
+      see declaration of 'std::formatter<std::__p2286::_Compile_time_parse_format_specs::_FormattedType,std::__p2286::_Compile_time_parse_format_specs::_CharT>'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(1075,39):
+      while evaluating constexpr function 'std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>::_On_replacement_field'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(1141,42):
+      while evaluating constexpr function 'std::_Parse_replacement_field'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2857,33):
+      while evaluating constexpr function 'std::_Parse_format_string'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2732,23):
+      the template instantiation context (the oldest one first) is
+          D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\Landmark.cpp(14,13):
+          see reference to function template instantiation 'std::basic_format_string<char,const std::string &,const Coordinates &,const unsigned int &>::basic_format_string<char[38]>(const _Ty (&))' being compiled
+          with
+          [
+              _Ty=char [38]
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2857,89):
+          see reference to class template instantiation 'std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2745,5):
+          while compiling class template member function 'std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>::_Format_checker(std::basic_string_view<char,std::char_traits<char>>,const std::_Basic_format_arg_type *) noexcept'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2857,89):
+              see the first reference to 'std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>::_Format_checker' in 'Landmark::print'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2747,25):
+          see reference to function template instantiation 'std::_String_view_iterator<_Traits> std::__p2286::_Compile_time_parse_format_specs<Coordinates,std::basic_format_parse_context<char>>(_ParseContext &)' being compiled
+          with
+          [
+              _Traits=std::char_traits<char>,
+              _ParseContext=std::basic_format_parse_context<char>
+          ]
   
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,19): error C2143: syntax error: missing ';' before ':'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,19): error C2059: syntax error: ':'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,21): error C2143: syntax error: missing ';' before '{'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,23): error C2059: syntax error: ','
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,54): error C2059: syntax error: ':'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,56): error C2447: '{': missing function header (old-style formal list?)
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,58): error C2001: newline in constant
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(12,58): error C2059: syntax error: 'string'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(13,1): error C2143: syntax error: missing ';' before '}'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(13,1): error C2059: syntax error: '}'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(16,1): error C2143: syntax error: missing ';' before '{'
-D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\FieldSurveyor.cpp(16,1): error C2447: '{': missing function header (old-style formal list?)
+D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\Landmark.cpp(14,13): error C3615: consteval function 'std::__p2286::_Compile_time_parse_format_specs' cannot result in a constant expression
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2721,35):
+      failure was caused by control reaching the end of a consteval function
+      D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\Landmark.cpp(14,13):
+      the call stack of the evaluation (the oldest call first) is
+          D:\github_projects\Object-Oriented-Programming-Fmi-2026\homework_4th\homework_4th\Landmark.cpp(14,13):
+          while evaluating function 'std::basic_format_string<char,const std::string &,const Coordinates &,const unsigned int &>::basic_format_string<char[38]>(const _Ty (&))'
+          with
+          [
+              _Ty=char [38]
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2857,33):
+          while evaluating function 'void std::_Parse_format_string<char,std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>>(std::basic_string_view<char,std::char_traits<char>>,_HandlerT &&)'
+          with
+          [
+              _HandlerT=std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(1141,42):
+          while evaluating function 'const _CharT *std::_Parse_replacement_field<char,_HandlerT&>(const _CharT *,const _CharT *,std::__p2286::_Format_checker<_CharT,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>&)'
+          with
+          [
+              _CharT=char,
+              _HandlerT=std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(1075,39):
+          while evaluating function 'void std::__p2286::_Format_checker<char,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,Coordinates,unsigned int>::_On_replacement_field(const size_t,const _CharT *)'
+          with
+          [
+              _CharT=char
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\format(2751,32):
+          while evaluating function 'std::_String_view_iterator<_Traits> std::__p2286::_Compile_time_parse_format_specs<Coordinates,std::basic_format_parse_context<char>>(_ParseContext &)'
+          with
+          [
+              _Traits=std::char_traits<char>,
+              _ParseContext=std::basic_format_parse_context<char>
+          ]
+  
   minChoosenDisciplineCreditsRequirement.cpp
   minCreditsRequirement.cpp
   minGradeRequirement.cpp
@@ -243,6 +292,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.3520
           C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3630,27):
           while trying to match the argument list '(Requirement *)'
   
+  Settlement.cpp
   Student.cpp
   StudentSystem.cpp
   takenDisciplinesRequirement.cpp
