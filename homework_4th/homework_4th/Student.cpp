@@ -27,3 +27,8 @@ unsigned int Student::getChoosenDiscCredits() const
 {
 	return choosenDiscCredits;
 }
+
+const std::string& Student::getFacNum() const
+{
+	return facNumber;
+}

@@ -42,6 +42,18 @@
     <ClInclude Include="MinCategoryDisciplinesRequirement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RequirementFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdmissionService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdmissionResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Discipline.cpp">
@@ -63,6 +75,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MinCategoryDisciplinesRequirement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RequirementFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdmissionService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdmissionResult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
