@@ -14,8 +14,10 @@ class Landmark
 		unsigned int threat;
 
 	public:
-		Landmark(const std::string inpName, const Coordinates& inpCoords, unsigned int inpThreat);
+		Landmark(const std::string& inpName, const Coordinates& inpCoords, unsigned int inpThreat);
 		virtual std::string getType() const = 0;;
 		virtual void print() const = 0;
+		virtual ~Landmark() = default;
+		const std::string& getName() const;
 };
 

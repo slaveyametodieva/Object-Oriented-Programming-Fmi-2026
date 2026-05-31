@@ -1,6 +1,6 @@
 #include "Landmark.h"
 #include <print>
-Landmark::Landmark(const std::string inpName, const Coordinates& inpCoords, unsigned int inpThreat)
+Landmark::Landmark(const std::string& inpName, const Coordinates& inpCoords, unsigned int inpThreat)
 	:name(inpName), coords(inpCoords), threat(inpThreat)
 {
 	if (threat > MAX_THREAT)
@@ -11,5 +11,10 @@ Landmark::Landmark(const std::string inpName, const Coordinates& inpCoords, unsi
 
 void Landmark::print() const
 {
-	std::print("Name: {}, coordinates: {}, threat: {}", name, coords, threat);
+	std::print("Name: {}, coordinates: x: {}, y: {}, threat: {}", name, coords.x, coords.y, threat);
+}
+
+const std::string& Landmark::getName() const
+{
+	return name;
 }
