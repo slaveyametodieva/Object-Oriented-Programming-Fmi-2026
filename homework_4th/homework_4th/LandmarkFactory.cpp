@@ -5,6 +5,7 @@
 #include "Ruin.h"
 #include "NaturalFeature.h"
 #include "FeatureKind.h"
+#include <sstream>
 
 std::unique_ptr<Landmark> LandmarkFactory::create(const std::string& type, const std::string& name,
 	Coordinates coords, int threat, const std::string& extra)
@@ -32,4 +33,26 @@ std::unique_ptr<Landmark> LandmarkFactory::create(const std::string& type, const
 	{
 		throw std::invalid_argument("the type was not recognised");
 	}
+}
+
+std::unique_ptr<Landmark> LandmarkFactory::create(const std::string& args)
+{
+	std::istringstream iss(args);
+	std::string type, name, extra;
+	int x, y, threat;
+
+	iss >> type >> name >> x >> y >> threat;
+
+	if (!(iss >> type >> name >> x >> y >> threat))
+	{
+		throw std::invalid_argument("Invalid arguments format for Landmark!");
+	}
+
+	if (!(iss >> extra))
+	{
+		extra = "";
+	}
+	
+	Coordinates coords(x, y);
+	return create(type, name, coords, threat, extra);
 }
