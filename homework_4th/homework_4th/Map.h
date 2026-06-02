@@ -6,10 +6,11 @@
 #include <memory>
 #include <vector>
 #include <iostream>
-
+#include <memory>
 class Map
 {
 	private:
+		std::string title;
 		std::shared_ptr<Territory> territory;
 		std::vector<std::shared_ptr<Cartographer>> cartographers;
 		std::vector<std::unique_ptr<Command>> history;
@@ -30,5 +31,6 @@ class Map
 		Territory& getTerritory() const;
 		void print() const;
 			 
+		const std::string& getTitle() const;
 };
 
